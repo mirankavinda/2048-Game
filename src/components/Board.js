@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Tile from './Tile';
 import Cell from './Cell';
+import { Board } from '../../helper';
 
-const Board = () => {
-  return (
-      <div>
-          Board
-    </div>
-  )
+const BoardView = () => {
+  const [board, setBoard] = useState(new Board());
+
+  return <div>{JOSN.stringify(board)}</div>;
 }
 
 
